@@ -46,7 +46,7 @@ int main() {
     string pattern;
     cin >> text >> pattern; 
     
-    vector<int> ans = naiveSearch(text, pattern);
+    vector<int> ans =kmpSearch(text, pattern);
     int n = ans.size();
     
     if (ans.empty()) {
